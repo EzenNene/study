@@ -1,0 +1,30 @@
+
+
+
+폰트패밀리 마지막에 세리프나 산세리프 넣기 (다국어 지원)
+height 와 line-height 수치 같게 하면 가운데 정렬
+margin: 0 auto; - 가운데 정렬
+
+block: margin 과 padding 을 자유롭게 지정,
+width-height 자유롭게 변경
+div, 시멘틱 태그 (레이아웃), p, h1~h6, table, ul, ...
+
+inline: margin을 좌우만 지정,
+width-height 변경불가
+a, img, span, button, textarea, select, input, label, ...
+
+inline-block: inline 태그처럼 한줄로 정렬이지만
+block 태그 특징 사용 가능
+
+display: inline-block;
+
+뷰포트 기준 앱솔루트
+앱솔루트 기준 릴레이티브
+
+z-index 는 수치 클수록 앞에옴
+(position / flex 에서 사용가능)
+
+
+
+
+

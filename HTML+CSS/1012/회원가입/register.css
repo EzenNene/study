@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 초기화코드 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+    padding: 20px;
+}
+
+#signup {
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
+
+#signup fieldset {
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+/* 제출버튼 */
+#signup fieldset:last-of-type {
+    border: none;
+}
+
+/* 로그인정보, 개인정보 */
+#signup legend {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+/* 개인정보 li, 로그인정보 li */
+#signup ul li {
+    list-style: none;
+    line-height: 30px;
+    padding-left: 5px 10px;
+    margin-bottom: 2px;
+}
+
+/* label 요소 라벨에 공간주기 */
+#signup label {
+    float: left;
+    font-size: 13px;
+    width: 110px;
+}
+
+/* 제출버튼 */
+#signup button {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: auto;
+}
+
+/* input 타입이 text, password, tel, email */
+#signup input[type=text], #signup input[type=password], 
+#signup input[type=tel] ,#signup input[type=email] {
+
+}
+
+/* input 에서 required 속성가진 요소 선택 */
+#signup input[required] {
+
+}
+
+#signup input[readonly] {
+
+}
+
+/* 버튼에 마우스 올렸을 때 */
+#signup button:hover {
+
+}

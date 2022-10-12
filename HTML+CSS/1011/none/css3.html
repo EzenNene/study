@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 태그 연습</title>
+
+    <style>
+        * {
+            /* 1. 전체선택자
+            '*' 전체태그를 쓰면 body, head, html도 적용됨 */
+
+            color: aquamarine;
+            font-style: 20px;
+        }
+
+        h1 {
+            /* 2. 태그(타입)선택자
+            'h1, span' 등 태그에 적용됨 */
+
+            color: red;
+        }
+
+        .title {
+            /* 3. 클래스 선택자 공통적으로 스타일 적용할 때
+            class명 앞에 . 붙이기 */
+          
+            color: aqua;
+        }
+
+        .title {
+            font-size: 6px;
+          
+        }
+
+            /* 4. id선택자: 각각 스타일을 적용할 때 
+            id 명은 의미가 있는 이름으로 다르게 해줘야함
+            중복불가 */
+
+        #board {
+            color: aqua;
+        }
+
+        #contents {
+            color: red;
+        }
+
+        /* 5. 클래스명은 여러개 쓸 수 있다 */
+
+        #board, #contents {
+            
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    <!-- class명은 의미가 있게, 같게 해줘야함 -->
+    <h1 class="title2 on" id="board">자유게시판</h1>
+
+    <p class="title2" id="contents">안녕하세요. 내용입니다.</p>
+    <p class="title2">안녕하세요. 내용입니다.</p>
+
+    <span class="title2">태그 입니다.</span>  
+    <form>
+        <input type="text" name="user_id" id="user_id">
+    </form>
+</body>
+</html>
