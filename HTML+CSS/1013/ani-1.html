@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+	<style>
+		#container{
+			width: 500px;
+			margin: 20px auto;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 50px;
+			animation: rotate 1.5s infinite background 1.5s infinite alternate;
+		}
+		#box1 {
+			background-color: #4cff00;
+			border: 1px solid transparent;
+			animation-name: shape;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-delay: 5s;
+			animation-direction: alternate;
+			/* 홀수 번째에는 노말, 나머지는 reverse로 진행
+			alternate */
+		
+		}
+		#box2 {
+			background-color: #8f06b0;
+			border: 1px solid transparent;
+			animation-name: rotate;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+		
+		}
+
+		/* 애니메이션 정의 */
+		@keyframes shape {
+			from {
+				border: 1px solid transparent;
+			}
+			to {
+				border: 1px solid #000;
+				border-radius: 50%;
+			}
+		}
+
+		@keyframes rotate {
+			from {
+				border: 1px solid transparent;
+			}
+			to {
+				border: 1px solid #000;
+				border-radius: 50%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+	</div>
+</body>
+</html>

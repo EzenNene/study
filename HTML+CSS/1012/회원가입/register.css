@@ -14,14 +14,14 @@ body {
 
 #signup {
     background: #fff;
-    border: 1px solid black;
+    border: 1px solid #222;
     border-radius: 5px;
     padding: 20px;
     width: 400px;
 }
 
 #signup fieldset {
-    border: 1px solid black;
+    border: 1px solid #ccc;
     margin-bottom: 30px;
 }
 
@@ -55,28 +55,48 @@ body {
 
 /* 제출버튼 */
 #signup button {
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid #222;
+    border-radius: 20px;
     font-size: 16px;
     margin: auto;
+    letter-spacing: 1px;
+    padding: 7px 25px;
+
+    display: block; /*버튼태그가 인라인 태그라 블럭요소를 주어야 마진0으로 중앙정렬가능*/
+    margin: 0 auto; /* 가운데정렬 */
 }
 
 /* input 타입이 text, password, tel, email */
-#signup input[type=text], #signup input[type=password], 
+/* #signup input[type=text], #signup input[type=password], 
 #signup input[type=tel] ,#signup input[type=email] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+} */
 
+/* 위방식=아래방식 */
+
+#signup input:not([type=radio]) {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
 }
 
 /* input 에서 required 속성가진 요소 선택 */
 #signup input[required] {
-
+    border: 1px red solid;
 }
-
+/* input 에서 readonly 속성을 가진 */
 #signup input[readonly] {
-
+    border: none;
 }
 
 /* 버튼에 마우스 올렸을 때 */
 #signup button:hover {
-
+    background: #222;
+    color: #fff;
 }
