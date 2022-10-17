@@ -100,6 +100,7 @@ button {
     border-bottom: 1px solid #444;
     padding: 10px;
     text-align: center;
+    height: 20px;
 }
 
 /* td 태그면서 타이틀 클래스를 가진 */

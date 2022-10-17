@@ -1,0 +1,94 @@
+/* 초기화 ======================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+header, footer, section {box-sizing: border-box;}
+
+/* header ======================================================== */
+
+header {
+    color: aliceblue;
+    width: 100%;
+    height: 700px;
+    background: rgb(3, 3, 37);
+}
+
+header h1 {
+    display: inline-block;
+    width: 100px;
+}
+
+header .header_text ul {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    /* background: rgb(15, 28, 100); */
+    justify-content: space-around;
+}
+
+/* main ======================================================== */
+
+.wrap {
+    color: aliceblue;
+    width: 1440px;
+    margin: 0 auto;
+    height: 3000px;
+    background: rgb(17, 17, 100);
+    text-align: center;
+}
+
+.top {
+    display: flex;
+    height: 500px;
+    flex: 1;
+}
+
+.center {
+    height: 500px;
+    flex: 1;
+}
+
+.center_2 {
+    height: 500px;
+    flex: 1;
+}
+
+.bottom {
+    height: 500px;
+    flex: 1;
+}
+
+/* div =========================================================== */
+
+.top div {
+    flex: 1;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+/* footer ======================================================== */
+
+
+footer {
+    width: 100%;
+    height: 500px;
+    background: gray;
+}
+
+footer .footer {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul {
+    margin-top: 50px;
+}
