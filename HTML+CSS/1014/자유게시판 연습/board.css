@@ -23,12 +23,14 @@ a {
 /* 버튼 =================================================================================== */
 
 .bt_button  {
-    float: right;
+    width: 100%;
     margin-top: 30px;
     
 }
 
 button {
+
+    float: right;
     background: rgb(210, 210, 210);
     border-color: rgb(164, 164, 164);
     min-width: 90px;
@@ -42,9 +44,8 @@ button {
 
 
 .board_page {
-    /* display: inline-block; */
     text-align: center;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
 }
 
