@@ -9,28 +9,39 @@ ul, li {
     list-style: none;
 }
 
-header, footer, section {box-sizing: border-box;}
-
 /* header ======================================================== */
 
-header {
+.top_bg {
     color: aliceblue;
     width: 100%;
     height: 700px;
     background: rgb(3, 3, 37);
 }
 
-header h1 {
-    display: inline-block;
-    width: 100px;
+.header_bg {
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+    background: skyblue;
 }
 
-header .header_text ul {
+.header_bg .header_5 {
+    width: calc(100% - 100px);
+    background: red;
+    height: 100px;
     margin: 0 auto;
-    width: 800px;
+}
+
+.header_5 ul {
     display: flex;
-    /* background: rgb(15, 28, 100); */
     justify-content: space-around;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.header_5 a {
+    text-decoration: none;
+    color: white;
 }
 
 /* main ======================================================== */
