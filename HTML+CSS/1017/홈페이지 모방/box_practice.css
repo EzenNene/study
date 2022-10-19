@@ -11,6 +11,8 @@ ul, li {
 
 /* header ======================================================== */
 
+header, footer, section {box-sizing: border-box;}
+
 .top_bg {
     color: aliceblue;
     width: 100%;
@@ -23,6 +25,11 @@ ul, li {
     width: 70%;
     height: 200px;
     background: skyblue;
+}
+
+.header_bg > h1 {
+    width: 100px;
+    height: 100px;
 }
 
 .header_bg .header_5 {

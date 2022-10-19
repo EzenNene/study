@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num_a = prompt(`첫번째 숫자입력`)
+        const num_b = prompt(`두번째 숫자입력`)
+        const num_c = prompt(`세번째 숫자입력`)
+    
+        var sum = Number(num_a) + Number(num_b) + Number(num_c)
+        var avg = (Number(num_a) + Number(num_b) + Number(num_c)) / 3
+
+        console.log(sum)
+        console.log(avg)
+
+        var max = num_a
+        var min = num_a
+
+        // ------------------------------------
+    
+        if (max < num_b) {max = num_b}  
+        if (max < num_c) {max = num_c}
+
+        if (min > num_b) {min = num_b}
+        if (min > num_c) {min = num_c}
+
+        // ------------------------------------
+
+
+        console.log(max)
+        console.log(min)
+
+    </script>
+</body>
+</html>
