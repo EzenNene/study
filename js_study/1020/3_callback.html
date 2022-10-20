@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //★ 콜백함수 : 매개변수로 전달하는 함수
+
+        function callThreeTimes(callback) {
+            for(let i = 0; i < 3; i++) {
+                callback(i) //print (i) 랑 똑같다
+            }
+        }
+
+        function print(i) {
+            console.log(`${i}번째 함수 호출`)
+
+        }
+
+        callThreeTimes(print)
+
+        //print 함수를 매개변수에 넣기
+        //callback 으로 받는다 
+    </script>
+</body>
+</html>

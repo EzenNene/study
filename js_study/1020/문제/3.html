@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+        function min(fisrt, ...rests) {
+
+            let output
+            let itmes
+
+            //매개변수의 자료형이 숫자인지 배열인지 판단
+
+            if (Array.isArray(first)) { //배열이면 true, 아니면 false
+                output = first[0]
+                items = first
+            } else if (typeof(first) === 'number') { //숫자형이라면
+                output = first
+                items = rests
+            }
+
+            for (const item of items) {
+                if (output > item) {
+                    output = item
+                }
+            }
+
+            return output
+
+        }
+
+        const testArr = [52, 273, 32, 103, 275, 24, 57]
+        console.log(`최솟값(숫자): ${min(52, 273, 32, 103, 275, 24, 57)}`)
+        console.log(`최솟값(배열): ${min(testArr)}`)
+
+    </script>
+</body>
+</html>

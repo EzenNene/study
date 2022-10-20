@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수</title>
+    <body>
+        <script>
+            var num = 1;  //전역변수 : 지역변수에 가져다 쓸 수 있음
+
+            //함수선언
+            function love() {
+              var b = 10   //지역변수 : 바깥으로 가져다 쓸 수 없음
+              var a = num+1; //지역변수
+              console.log('a:',a);
+            }
+
+            love();
+            console.log(num);
+            console.log(b)
+        </script>
+</body>
+</html>

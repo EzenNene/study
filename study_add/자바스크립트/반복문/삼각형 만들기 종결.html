@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //★ for 문은 ()안에 조건이 만족하는 한 계속 반복한다
+        //★ for 문은 반복문 이기에 변수에 계속 값을 넣고 출력할 수있다
+
+        let output = ''
+
+        for (let i=1; i <= 5; ++i) {        // 상위 for 문 = 행의 갯수 5=(1,2,3,4,5)  
+            for (let j=0; j < i; ++j) {     // 하위 for 문 = 별의 갯수 5=(0,1,2,3,4)
+                                            // j 가 i 보다 작을 때만 * 출력
+                output += "*"               
+               
+            } output += "\n" // 하나의 '콘솔'에서 줄바꿈 
+        } 
+
+        console.log(output) // 하나의 '콘솔'에서 출력
+ 
+// ======================================================================
+
+        /*
+
+        // 풀이
+
+        /* 가장 상위 for 문 조건이 만족할 때, 하위 for 문 조건도 
+        만족한다 (초깃값과 증감식 조건에 의해 j는 i 보다 작을 수 밖에 없기 때문)
+
+        그러므로 상위 for 문 조건이 만족하는 동안 
+        하위 for 문에서 변수에 *을 추가하는 것과,
+        상위 for 문에서 줄바꿈을 하는 것을 반복한다.
+
+        조건식에 의해 반복이 종료되면
+        for 문 바깥의 콘솔을 실행한다.
+
+
+        */
+
+// ======================================================================
+
+
+        // 여러 콘솔을 사용해 삼각형 만들기
+
+        let triangle = ''
+
+        for (let i=1; i <= 5; ++i) {
+            triangle += '*'
+            console.log(triangle)
+        }
+
+
+
+      
+    </script>
+</body>
+</html>
