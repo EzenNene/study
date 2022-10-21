@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //1. 리터럴 방식(6-1-1)
+        //객체 = 속성 + 메소드(함수)
+
+        const pet = {
+            name: '구름',  
+            old: '10살',                                 // 속성
+
+   
+            eat: function(food) {
+                console.log(`구름이가 ${food}을 먹습니다.`)  // 함수
+            },
+            sleep: function(where) {
+                console.log(`구름이가 ${where}에서 잠을 잡니다.`)
+            }
+        }
+    
+
+    /*
+        eat: (food) => {
+            console.log(`구름이가 ${food}을 먹습니다.`)  // 함수
+        },
+        sleep: (where) => {
+            console.log(`구름이가 ${where}에서 잠을 잡니다`)
+        }
+
+    */ 
+
+        console.log(pet.name) //객체 속성 출력
+        console.log(pet.old)
+
+        pet.eat('츄르') //함수실행 코드 (매개변수 넣을 수 있음)
+        pet.sleep('캣타워')
+
+    </script>
+</body>
+</html>

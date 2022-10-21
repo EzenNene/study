@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //객체 데이터(JSON 형식)
+        const product = {
+            name: '건조망고',   //키,밸류
+            type: '당절임',     //키,밸류
+            weight: 3,          //키,밸류
+            arr:['안','녕','하']         //키,밸류
+        }
+
+        //데이터 보는 법
+
+        console.log(product)
+        console.log(product.type)    
+        console.log(product.type.arr) // 특정 키 보기
+
+        //데이터 바꾸는 법
+
+        product.name = '바나나'
+
+        //배열 꺼내오기
+
+        const result = product.arr
+        console.log(result)
+        console.log(result[1])  //배열특정 값 꺼내오기
+
+        //데이터 추가
+        product.date = '2022/10/21'
+
+        //데이터 삭제
+        delete product.weight
+    
+
+    </script>
+</body>
+</html>

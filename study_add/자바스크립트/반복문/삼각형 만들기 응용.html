@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>용연이가 내준 숙제</title>
+</head>
+<body>
+    <script>
+
+        let triangle = ''
+
+         // 초깃값 때문에 ++row, row++ 상관없음
+
+         for (row=1; row<=5; row++) {
+
+            for (jump=4; jump >= row; jump--) {
+                triangle += ' '
+            }
+
+            for (star=1; star>=row; star--) {
+                triangle += '*'
+            } 
+
+            for (star2=1; star2 > 1 && star2 <= row; star2++) {
+                triangle += '**'
+            } 
+            
+            
+            triangle += '\n'
+
+         }
+
+         console.log(triangle)
+
+
+
+
+
+        // for (row=1; row<=5; row++) {
+            
+        //     for (star=1; star <= row; star++) {
+
+        //         for (jump=4; jump >= row; jump--) {
+
+        //             triangle += " "
+
+        //         } triangle += "**"         
+        //     } triangle += '\n'
+        // } 
+        
+        // console.log(triangle)
+
+    </script>
+</body>
+</html>
