@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="rect" alt="고양이1">
+    <img class="rect" alt="고양이2">
+    <img class="rect" alt="고양이3">
+    <img class="rect" alt="고양이4">
+    <script>
+        const rects = document.querySelectorAll('.rect')
+
+        rects.forEach(function(rect, index) {
+            const width = (index + 1) * 100
+            const src = `http://placekitten.com/${width}/250`
+
+            //요소.setAttribute(태그의 속성명, 속성값)
+            rect.setAttribute('src', `http://placekitten.com/${width}/250`)
+            rect.setAttribute('alt', `고양이`)
+
+            //요소.getAttribute(태그의 속성명)
+            console.log(rect.getAttribute('alt'))
+        })
+    </script>
+</body>
+</html>

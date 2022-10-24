@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="txt">안녕하세요</h1>
+    <h1 class="txt">안녕하세요</h1>
+    <h1 class="txt">안녕하세요</h1>
+    <h1 class="txt">안녕하세요</h1>
+
+    <script>
+
+        //태그 선택자, 클래스 선택자, 아이디 선택자...
+        //document.querySelector('선택자') -> 해당 요소를 가져온다.
+        // const header = document.querySelector('.txt')
+        // console.log(header)
+
+        // 요소.style.css속성(카멜표기) = 'css속성값'(문자형)
+        // header.style.color = 'red'
+        // header.style.backgroundColor = 'black'
+        // header.style.padding = '10px'
+   
+
+        //document.querySelectorALL('선택자') -> 해당 요소 모두 가져옴(배열형식)
+        const headers = document.querySelectorAll('.txt')
+        // console.log(headers)
+
+        // //1
+
+        // length = 문자열 또는 배열내 요소의 수
+        //headers.length = 배열형식으로 불러왔기 때문에 배열의 갯수
+
+        // for (let i = 0; i < headers.length; i++) {
+        //     headers[i].style.color = 'red'
+        //     headers[i].style.backgroundColor = 'black'
+
+        //     console.log(headers[i]) //배열 하나씩 불러오기
+        // }
+
+        // //2
+
+        // for (i of headers) {
+        //     i.style.color = 'red'
+        //     i.style.backgroundColor = 'black'
+        // }
+
+        // //3
+
+        // headers.forEach(function(header) {
+        //     header.style.color = 'red'
+        //     header.style.backgroundColor = 'black'
+        // })
+
+    </script>
+</body>
+</html>

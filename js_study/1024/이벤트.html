@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            /* 클릭을 여러번 했을 때 글자 선택 방지 */
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>클릭횟수: 0</h1>
+    <script>
+        let counter = 0
+        const h1 = document.querySelector('h1')
+
+        // //addEventListener ('이벤트명', 콜백함수)
+        // h1.addEventListener('click', function(){
+        //     //클릭 시 실행할 코드
+        //     counter++
+        //     h1.textContent = `클릭횟수: ${counter}`
+        // })  // es5
+
+        const listener = function(){
+            //클릭 시 실행할 코드
+            counter++
+            h1.textContent = `클릭횟수: ${counter}`
+        }
+
+        h1.addEventListener('click', listener)
+
+        // removeEventListen('지울 이벤트명', 콜백함수)
+        h1.removeEventListener('click', listener)
+
+        // h1.addEventListener('click', () => {})      // es6
+
+    </script>
+</body>
+</html>
