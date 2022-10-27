@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="wrap">
+        <p>
+            <button class="btn1">버튼1</button>
+        </p>
+        <p class="btn_test">
+            <button class="btn2">버튼2</button>
+        </p>
+    </div>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+
+            $(function () {
+                
+                $(".btn1.on").on("mouseover focus", function () {
+                    alert("hi!")
+                })
+                
+                $('.btn1').addClass("on")
+
+                // 라이브 이벤트 방식
+
+                $('.btn_test').on("mouseover focus", ".btn2.on", function () {
+                    alert("hi!")
+                })
+                
+                $('.btn2').addClass('on')
+
+            })
+    
+    </script>
+</body>
+</html>

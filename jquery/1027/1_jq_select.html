@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul class="list_1">
+            <li class="list_1">
+                <span class="child1">1번 자식입니다</span>
+                <span>2번</span>
+                <span class="child3">3번</span>
+                <span>4번</span>
+                <span class="child5">5번</span>
+    
+            </li>
+            <li id="list_2">리스트2</li>
+            <li id="list_3">리스트3</li>
+        </ul>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function () {
+
+            // 가장 가까운 상위요소
+            $("child3").closest("list_1").css("border", '1px solid red')
+            
+            // $(".child3").prevUntil(".child1").css("border", '1px solid red')
+            // $(".child3").nextUntil(".child5").css("border", '1px solid blue')
+
+            // $('#list_1').parents().css("border", "1px solid red")
+            // $('#list_1').parent().css("border", "1px solid red")
+            // $('#list_1').children().css("border", "1px solid red")
+            // $('#list_1').children('.child').css("border", "1px solid blue")
+
+            // $(".child2").prev().css("border", '1px solid red')
+            // $(".child2").next().css("border", '1px solid blue')
+
+            // $(".child2").siblings().css("border", '1px solid red')
+
+        })
+    </script>
+</body>
+</html>

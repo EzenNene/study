@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="#" target="_blank">이동</a>
+    <a href="https://www.naver.com/" target="_blank">이동</a>
+
+    <form action="#" id="member_f">
+        <input type="text" name="user_id" id="user_id">
+        <input type="password" name="user_pwd" id="user_pwd">
+    </form>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+
+        $(function() {
+            $('a[target]').css("border", "1px solid red")
+            // target 이라는 속성 가진 a 태그 선택
+            $('a[href^=https]').css("border", "1px solid blue")
+
+            $('#member_f :text').css({
+                "background-color":"blue",
+                "height": "200px"
+            })
+                
+            $('#member_f :password').css({
+                "background-color":"yellow",
+            })
+        })    
+    </script>
+   
+</body>
+</html>
