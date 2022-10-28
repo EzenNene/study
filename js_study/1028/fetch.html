@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var url = "https://api.openweathermap.org/data/2.5/weather?"
+            url += "appid=9151bf7d6265bcf92d8e3f1d5c518a21"
+            url += "&units=metric"
+            url += "&lang=kr"
+            url += "&q=incheon"
+
+        const getData = (url) => {
+            return fetch(url)
+        }
+
+        getData(url).then(data => 
+            data.json()
+        ).then(
+            result => console.log(result) 
+        )
+    </script>
+</body>
+</html>
